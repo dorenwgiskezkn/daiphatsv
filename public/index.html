@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Haven - Online Bookstore</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #34495e;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .container {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .book {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .book img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .book-details {
+      padding: 15px;
+      flex-grow: 1;
+    }
+    .book h3 {
+      margin: 0 0 10px;
+      font-size: 1.2em;
+    }
+    .book p {
+      font-size: 0.9em;
+      margin: 0 0 10px;
+    }
+    .price {
+      color: #e74c3c;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    .buy-button {
+      background: #27ae60;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 1em;
+      cursor: pointer;
+      width: 100%;
+      border-top: 1px solid #eee;
+    }
+    .buy-button:hover {
+      background: #219150;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ecf0f1;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Book Haven</h1>
+  <p>Discover the world of great books every day</p>
+</header>
+
+<section class="container">
+  <div class="book">
+    <img src="https://images.unsplash.com/photo-1589820296156-2454bb8c929c?auto=format&fit=crop&w=500&q=80" alt="Book 1">
+    <div class="book-details">
+      <h3>Atomic Habits</h3>
+      <p>Small changes, big results. Build better habits today.</p>
+      <div class="price">$5.00</div>
+    </div>
+    <button class="buy-button">Buy Now</button>
+  </div>
+
+  <div class="book">
+    <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=500&q=80" alt="Book 2">
+    <div class="book-details">
+      <h3>Deep Work</h3>
+      <p>Focused success in a distracted world.</p>
+      <div class="price">$5.40</div>
+    </div>
+    <button class="buy-button">Buy Now</button>
+  </div>
+
+  <div class="book">
+    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=500&q=80" alt="Book 3">
+    <div class="book-details">
+      <h3>The Subtle Art of Not Giving a F*ck</h3>
+      <p>Sometimes you just need to care less and live more.</p>
+      <div class="price">$4.80</div>
+    </div>
+    <button class="buy-button">Buy Now</button>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Book Haven. Contact: support@bookhaven.com
+</footer>
+
+</body>
+</html>
